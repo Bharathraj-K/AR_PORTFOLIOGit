@@ -4,7 +4,10 @@ public class CloseButton : MonoBehaviour
 {
     public GameObject mainCanvas;
     public GameObject model;
+    public GameObject modelBody;
     public GameObject[] panels;
+
+    
 
     public void OnClick(){
         foreach (GameObject panel in panels)
@@ -13,6 +16,7 @@ public class CloseButton : MonoBehaviour
         }
         mainCanvas.SetActive(true);
         model.SetActive(true);
+        modelBody.SetActive(true);
         gameObject.SetActive(false);
 
     }

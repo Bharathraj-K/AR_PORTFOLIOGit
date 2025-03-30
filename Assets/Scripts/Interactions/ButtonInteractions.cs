@@ -6,6 +6,8 @@ public class ButtonInteraction : MonoBehaviour
     public GameObject mainCanvas;
     public GameObject model;
 
+    //public GameObject modelBody;
+
     public GameObject quitCanvas;
     public GameObject[] panels;
     void Start()
@@ -20,6 +22,7 @@ public class ButtonInteraction : MonoBehaviour
     {
         mainCanvas.SetActive(false);
         model.SetActive(false);
+        //modelBody.SetActive(false);
         quitCanvas.SetActive(true);       
 
         foreach (GameObject panel in panels)
