@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class ButtonInteraction : MonoBehaviour
@@ -7,7 +8,6 @@ public class ButtonInteraction : MonoBehaviour
 
     public GameObject quitCanvas;
     public GameObject[] panels;
-
     void Start()
     {
         foreach(GameObject panel in panels)
@@ -20,9 +20,8 @@ public class ButtonInteraction : MonoBehaviour
     {
         mainCanvas.SetActive(false);
         model.SetActive(false);
-        quitCanvas.SetActive(true); 
+        quitCanvas.SetActive(true);       
 
-       
         foreach (GameObject panel in panels)
         {
             panel.SetActive(false);
