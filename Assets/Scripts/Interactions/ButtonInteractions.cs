@@ -1,4 +1,3 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class ButtonInteraction : MonoBehaviour
@@ -35,7 +34,7 @@ public class ButtonInteraction : MonoBehaviour
         {
             panels[panelIndex].SetActive(true);
         }
-        Debug.Log($"Panel {panelIndex} active? " + panels[panelIndex].activeSelf);
+        
 
         
     }
